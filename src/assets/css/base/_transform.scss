@@ -1,0 +1,49 @@
+@mixin transform($visibility) {
+    transform: $visibility;
+    -webkit-transform: $visibility;
+    -moz-transform: $visibility;
+    -ms-transform: $visibility;
+    -o-transform: $visibility;
+}
+
+@mixin transform-og($visibility) {
+    transform-origin: $visibility;
+    -webkit-transform-origin: $visibility;
+    -moz-transform-origin: $visibility;
+    -ms-transform-origin: $visibility;
+    -o-transform-origin: $visibility;
+}
+
+@mixin transition($visibility) {
+    transition: $visibility;
+    -webkit-transition: $visibility;
+    -moz-transition: $visibility;
+    -ms-transition: $visibility;
+    -o-transition: $visibility;
+}
+
+@mixin animation($visibility) {
+    animation: $visibility;
+    -webkit-animation: $visibility;
+    -moz-animation: $visibility;
+    -ms-animation: $visibility;
+    -o-animation: $visibility;
+}
+
+@mixin box-shadow($visibility) {
+    -moz-box-shadow: inset ($visibility);
+    -webkit-box-shadow: inset ($visibility);
+    box-shadow: inset ($visibility);
+}
+
+@mixin bglinear_3($var1, $var2, $var3) {
+    background: -moz-linear-gradient($var1, $var2, $var3);
+    background: -webkit-linear-gradient($var1, $var2, $var3);
+    background: linear-gradient($var1, $var2, $var3);
+}
+
+@mixin bglinear_4($var1, $var2, $var3, $var4) {
+    background: -moz-linear-gradient($var1, $var2, $var3, $var4);
+    background: -webkit-linear-gradient($var1, $var2, $var3, $var4);
+    background: linear-gradient($var1, $var2, $var3, $var4);
+}

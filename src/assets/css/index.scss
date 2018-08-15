@@ -1,0 +1,398 @@
+@import "base/transform";
+.txt-pos {
+    max-width: 700px;
+    position: absolute;
+    left: calc(250px + 4%);
+    top: 5%;
+    z-index: 1;
+    color: #ffffff;
+    font-weight: lighter;
+    h1 {
+        font-size: 2em;
+        line-height: 1.44em;
+        font-weight: normal;
+        margin-bottom: 0.5em;
+    }
+    h2 {
+        font-size: 1.25em;
+        line-height: 1.44em;
+        font-weight: normal;
+        margin-bottom: 0.2em;
+    }
+    p {
+        font-size: 1em;
+        line-height: 1.6em;
+        letter-spacing: 1px;
+    }
+}
+
+.annotation {
+    font-size: 0.8em;
+    line-height: 14px;
+    color: #fff;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    z-index: 2;
+}
+
+// arrow control
+.pt-trigger-container {
+    position: absolute;
+    width: 100%;
+    z-index: 999999;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    @include transform(translate(0, -50%));
+}
+
+#nextpage,
+#prevpage {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0.5;
+    @include transform(translate(0, -50%));
+    @include transition(all 0.3s);
+    &:hover {
+        opacity: 1;
+    }
+}
+
+#prevpage {
+    background-image: url(../images/arrow-left.svg);
+    background-size: 100%;
+    left: calc(13% + 10px);
+    right: auto;
+}
+
+#nextpage {
+    background-image: url(../images/arrow-right.svg);
+    background-size: 100%;
+    right: 10px;
+    left: auto;
+}
+
+.home {
+    background: url(../images/kvBg.jpg) center top no-repeat;
+    background-size: cover;
+    .container {
+        width: 100%;
+        padding: 5% 5% 5% calc(250px + 5%);
+        text-align: center;
+        img {
+            width: auto;
+            display: inline-block;
+        }
+    }
+}
+
+// 1
+.slide101 {
+    background: url(../images/slide101.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide102 {
+    background: url(../images/slide102.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide103 {
+    background: url(../images/slide103.jpg) center center no-repeat;
+    background-size: cover;
+    .txt-pos {
+        top: auto;
+        bottom: 10%;
+    }
+}
+
+.slide104 {
+    background: url(../images/slide104.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide105 {
+    background: url(../images/slide105.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+// 2 360 -----
+// 3
+.slide301 {
+    background: url(../images/slide301.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide302 {
+    background: url(../images/slide302.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide303 {
+    background: url(../images/slide303.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide304 {
+    background: url(../images/slide304.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide305 {
+    background: url(../images/slide305.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+// 4
+.slide401 {
+    background: url(../images/slide401.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide402 {
+    background: url(../images/slide402.jpg) center center no-repeat;
+    background-size: cover;
+    .txt-pos {
+        top: auto;
+        left: auto;
+        bottom: 10%;
+        right: 5%;
+    }
+}
+
+.slide403 {
+    background: url(../images/slide403.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide404 {
+    background: url(../images/slide404.jpg) center center no-repeat;
+    background-size: cover;
+    .txt-pos {
+        top: auto;
+        left: auto;
+        bottom: 10%;
+        right: 5%;
+    }
+}
+
+.slide405 {
+    background: url(../images/slide405.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide406 {
+    background: url(../images/slide406.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+// 5
+.slide501 {
+    background: url(../images/slide501.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide502 {
+    background: url(../images/slide502.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide503 {
+    background: url(../images/slide503.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide504 {
+    background: url(../images/slide504.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide505 {
+    background: url(../images/slide505.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+// 6
+.slide601 {
+    background: url(../images/slide601.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide602 {
+    background: url(../images/slide602.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide603 {
+    background: url(../images/slide603.jpg) center center no-repeat;
+    background-size: cover;
+    .txt-pos {
+        top: auto;
+        left: auto;
+        bottom: 10%;
+        right: 5%;
+    }
+}
+
+// 7
+.slide701 {
+    background: url(../images/slide701.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide702 {
+    background: url(../images/slide702.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide703 {
+    background: url(../images/slide703.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide704 {
+    background: url(../images/slide704.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+// section 31 contact
+.contactContent {
+    width: 100%;
+    padding: 2% 2% 2% calc(250px + 2%);
+    background-color: #ffffff;
+    overflow: auto;
+    h1 {
+        display: block;
+        font-size: 2.5em;
+        color: #333333;
+        border-bottom: solid 2px #a2a2a2;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.contact-table {
+    width: 36%;
+    display: inline-block;
+    margin-bottom: 15px;
+    vertical-align: top;
+    p {
+        display: block;
+        color: #4c4948;
+        font-size: 1.15em;
+        line-height: 1.44em;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+}
+
+.map-box {
+    width: 60%;
+    display: inline-block;
+    box-shadow: 6px 6px 10px rgba(187, 187, 187, 0.75);
+    margin-bottom: 10px;
+    vertical-align: top;
+    margin-right: 3%;
+}
+
+#google_map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    >iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+.fill-in-table {
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    margin-top: 3%;
+    margin-right: 3%;
+    vertical-align: bottom;
+    h3 {
+        color: #333333;
+        font-size: 1.25em;
+        font-weight: bold;
+        line-height: 1.2em;
+    }
+    p {
+        color: #333333;
+        font-size: 0.8em;
+        line-height: 1.6em;
+        padding: 0.6% 0;
+        letter-spacing: 1px;
+    }
+    .input-box {
+        width: 100%;
+        display: block;
+        >.inputbox {
+            width: 100%;
+            height: 40px;
+            text-indent: 10px;
+            font-size: 0.9em;
+            border: 2px solid #aaaaaa;
+            border-radius: 3px;
+            margin: 5px 0;
+        }
+    }
+}
+
+.checkbox {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox input[type="checkbox"]+label {
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]+label span {
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    margin: -2px 4px 0 0;
+    vertical-align: middle;
+    background: url(../images/checkbox-checked.png) right top no-repeat;
+}
+
+.checkbox input[type="checkbox"]:checked+label span {
+    background: url(../images/checkbox-checked.png) left top no-repeat;
+}
+
+.btn-block {
+    width: 36%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.sent {
+    width: 190px;
+    height: 70px;
+    background-color: #196bb4;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Microsoft JhengHei';
+    cursor: pointer;
+}
