@@ -668,41 +668,39 @@ var PageTransitions = (function() {
                 $('body').removeClass('fp-viewing-page' + (currentPageIndex + 2));
                 var $nowPage = $('body').addClass('fp-viewing-page' + (currentPageIndex + 1));
                 // console.log($nowPage);
-                $(".noshowmobile li").removeClass("active");
+                $("#menu li").removeClass("active");
                 // console.log(currentPageIndex);
 
-                if ($('body').hasClass('fp-viewing-page2') || $('body').hasClass('fp-viewing-page3') || $('body').hasClass('fp-viewing-page4')) {
-                    $(".Mansion").addClass("active");
+                //層峰
+                if ($('body').hasClass('fp-viewing-page2') || $('body').hasClass('fp-viewing-page3') || $('body').hasClass('fp-viewing-page4') || $('body').hasClass('fp-viewing-page5') || $('body').hasClass('fp-viewing-page6')) {
+                    $(".PeakArea").addClass("active");
                 }
-                if ($('body').hasClass('fp-viewing-page5')) {
-                    $(".Landscape").addClass("active");
+                //環景
+                if ($('body').hasClass('fp-viewing-page7')) {
+                    $(".PanoramicView").addClass("active");
                 }
-                if ($('body').hasClass('fp-viewing-page6') || $('body').hasClass('fp-viewing-page7')) {
-                    $(".Facilities").addClass("active");
+                //陽明
+                if ($('body').hasClass('fp-viewing-page8') || $('body').hasClass('fp-viewing-page9') || $('body').hasClass('fp-viewing-page10') || $('body').hasClass('fp-viewing-page11') || $('body').hasClass('fp-viewing-page12')) {
+                    $(".YangMingLive").addClass("active");
                 }
-                // var ict = currentPageIndex+1;
-                // var $nPagA = 
-                //         ["$('body').hasClass('fp-viewing-page1')", "$('body').hasClass('fp-viewing-page2')", "$('body').hasClass('fp-viewing-page3')", "$('body').hasClass('fp-viewing-page4')", "$('body').hasClass('fp-viewing-page5')", "$('body').hasClass('fp-viewing-page6')", "$('body').hasClass('fp-viewing-page7')", "$('body').hasClass('fp-viewing-page8')", "$('body').hasClass('fp-viewing-page9')"];
-                // for (var i = 0; i<$nPagA.length;i++) {
-                //     // console.log($nPagA[1]);
-                //     if( 1<$nPagA[i]<5) {
-                //         $(".Space").addClass("active");
-                //         console.log($nPagA.length);
-                //     } else {
-                //          $(".Space").removeClass("active");
-                //     }
-                // }                
-
-                if ($('body').hasClass('fp-viewing-page8') || $('body').hasClass('fp-viewing-page9') || $('body').hasClass('fp-viewing-page10') || $('body').hasClass('fp-viewing-page11') || $('body').hasClass('fp-viewing-page12') || $('body').hasClass('fp-viewing-page13') || $('body').hasClass('fp-viewing-page14')) {
-                    $(".Space").addClass("active");
+                //摩天
+                if ($('body').hasClass('fp-viewing-page13') || $('body').hasClass('fp-viewing-page14') || $('body').hasClass('fp-viewing-page15') || $('body').hasClass('fp-viewing-page16') || $('body').hasClass('fp-viewing-page17') || $('body').hasClass('fp-viewing-page18')) {
+                    $(".Skyscraper").addClass("active");
                 }
-                if ($('body').hasClass('fp-viewing-page15') || $('body').hasClass('fp-viewing-page16')) {
-                    $(".Master").addClass("active");
+                //名流
+                if ($('body').hasClass('fp-viewing-page19') || $('body').hasClass('fp-viewing-page20') || $('body').hasClass('fp-viewing-page21') || $('body').hasClass('fp-viewing-page22') || $('body').hasClass('fp-viewing-page23')) {
+                    $(".Celebrity").addClass("active");
                 }
-                if ($('body').hasClass('fp-viewing-page17') || $('body').hasClass('fp-viewing-page18') || $('body').hasClass('fp-viewing-page19') || $('body').hasClass('fp-viewing-page20') || $('body').hasClass('fp-viewing-page21')) {
-                    $(".Brand").addClass("active");
+                //藝術
+                if ($('body').hasClass('fp-viewing-page24') || $('body').hasClass('fp-viewing-page25') || $('body').hasClass('fp-viewing-page26')) {
+                    $(".ArtFeast").addClass("active");
                 }
-                if ($('body').hasClass('fp-viewing-page22')) {
+                //人文
+                if ($('body').hasClass('fp-viewing-page27') || $('body').hasClass('fp-viewing-page28') || $('body').hasClass('fp-viewing-page29') || $('body').hasClass('fp-viewing-page30')) {
+                    $(".HumanBrand").addClass("active");
+                }
+                //預 約
+                if ($('body').hasClass('fp-viewing-page31')) {
                     $(".Info").addClass("active");
                 }
 

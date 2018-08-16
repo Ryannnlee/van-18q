@@ -6,7 +6,7 @@ $primary-color-g: #00653b;
 $primary-color-bl: #1764a1;
 header {
     position: fixed;
-    width: 250px;
+    width: 13%;
     height: 100%;
     z-index: 99;
     top: 0;
@@ -22,13 +22,13 @@ header {
     position: relative;
     background: url(../images/home_slide01.jpg) left center no-repeat;
     background-size: cover;
-    background: #1f468c;
+    background: #bf0000;
 }
 
 #logo {
     width: 100%;
     min-width: 120px;
-    padding: 10px 7%;
+    padding: 7%;
     display: block;
     @include transition(all 0.3s);
     position: relative;
@@ -58,7 +58,7 @@ header {
         display: inline-block;
         vertical-align: middle;
         position: relative;
-        top: 50%;
+        top: 47%;
         @include transform(translate(0, -50%));
     }
     li {
@@ -98,9 +98,7 @@ header {
     }
 }
 
-
-/*-- footer ------------------------------*/
-
+// footer 
 .footer {
     width: 100%;
     position: absolute;
@@ -160,7 +158,7 @@ header {
 }
 
 .button_container span {
-    background: $primary-color-g;
+    background: #ffffff;
     border: none;
     height: 2px;
     width: 100%;
@@ -180,7 +178,7 @@ header {
     top: 100%;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1025px) {
     .button_container {
         display: none;
     }
@@ -188,26 +186,33 @@ header {
 
 .button_container.active .top {
     @include transform(translateY(8px) translateX(-50%) rotate(45deg));
-    background: $primary-color-g;
+    background: #ffffff;
 }
 
 .button_container.active .middle {
     opacity: 0;
-    background: $primary-color-g;
+    background: #ffffff;
 }
 
 .button_container.active .bottom {
     @include transform(translateY(-10px) translateX(-50%) rotate(-45deg));
-    background: $primary-color-g;
+    background: #ffffff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+    header {
+        width: 100%;
+        height: auto;
+    }
+    .footer {
+        display: none;
+    }
     .container-fluid.nav-right {
         padding: 0;
     }
     .overlay {
         position: fixed;
-        background: rgba(255, 255, 255, 0.98);
+        background: #bf0000;
         top: 0;
         left: 0;
         width: 100%;
@@ -216,9 +221,7 @@ header {
         opacity: 0;
         opacity: 1\9\0;
         visibility: hidden;
-        -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-        -o-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-        transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+        @include transition(all 0.3s);
         overflow: hidden;
         z-index: 1000;
     }
@@ -243,6 +246,7 @@ header {
             opacity: 1\9\0;
             transition: all .6s;
             margin: 10px 0 !important;
+            padding: 0;
             &::after {
                 content: none;
             }
@@ -265,15 +269,6 @@ header {
                 color: #fff;
                 text-decoration: none;
                 overflow: hidden;
-            }
-            ul#submenu {
-                height: auto;
-                overflow: auto;
-                position: relative;
-                top: 0;
-                li {
-                    padding: 0;
-                }
             }
         }
     }
@@ -300,17 +295,32 @@ header {
         -webkit-animation-delay: 0.5s;
         animation-delay: 0.5s;
     }
+    .overlay.open li:nth-child(5) {
+        -webkit-animation-delay: 0.55s;
+        animation-delay: 0.55s;
+    }
+    .overlay.open li:nth-child(6) {
+        -webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+    }
+    .overlay.open li:nth-child(7) {
+        -webkit-animation-delay: 0.65s;
+        animation-delay: 0.65s;
+    }
+    .overlay.open li:nth-child(8) {
+        -webkit-animation-delay: 0.75s;
+        animation-delay: 0.75s;
+    }
     #logo {
         width: 50%;
-        max-width: 160px;
-        padding: 15px 0;
+        max-width: 150px;
+        padding: 15px;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     #logo {
-        width: 30%;
-        padding: 5px 0;
+        padding: 5px 10px;
     }
 }
 

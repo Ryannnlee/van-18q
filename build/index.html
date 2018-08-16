@@ -27,18 +27,21 @@
 
     <link rel="stylesheet" href="assets/css/plugin/transition-animations.css" />
     <link rel="stylesheet" href="assets/css/plugin/demo-single-page.css" />
+    <link rel="stylesheet" href="panorama360/panorama360.css" media="all">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
 
 <!-- index css -->
 <link rel="stylesheet" href="assets/css/index.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/plugins/jquery.touchSwipe.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="assets/js/plugins/transition.js"></script>
+    <!-- <script src="panorama360/jquery.mousewheel.min.js"></script> -->
+    <script src="panorama360/jquery.panorama360.js"></script>
 
 </head>
 
@@ -59,14 +62,14 @@
             <nav class="overlay" id="overlay">
                 <div class="overlay-nav">
                     <ul id="menu">
-                        <li class="Mansion"><a class="pt-trigger" data-animation="26" data-goto="2">層&nbsp;峰&nbsp;地&nbsp;段</a></li>
-                        <li class="Landscape"><a class="pt-trigger" data-animation="26" data-goto="5">環&nbsp;景&nbsp;視&nbsp;野</a></li>
-                        <li class="Facilities"><a class="pt-trigger" data-animation="26" data-goto="6">陽&nbsp;明&nbsp;生&nbsp;活</a></li>
-                        <li class="Space"><a class="pt-trigger" data-animation="26" data-goto="8">摩&nbsp;天&nbsp;豪&nbsp;邸</a></li>
-                        <li class="Master"><a class="pt-trigger" data-animation="26" data-goto="15">名&nbsp;流&nbsp;品&nbsp;味</a></li>
-                        <li class="Brand"><a class="pt-trigger" data-animation="26" data-goto="17">藝&nbsp;術&nbsp;盛&nbsp;宴</a></li>
-                        <li class="Brand"><a class="pt-trigger" data-animation="26" data-goto="17">人&nbsp;文&nbsp;品&nbsp;牌</a></li>
-                        <li class="Info"><a class="pt-trigger" data-animation="26" data-goto="22">立&nbsp;即&nbsp;預&nbsp;約</a></li>
+                        <li class="PeakArea"><a class="pt-trigger" data-animation="26" data-goto="2">層&nbsp;峰&nbsp;地&nbsp;段</a></li>
+                        <li class="PanoramicView"><a class="pt-trigger" data-animation="26" data-goto="7">環&nbsp;景&nbsp;視&nbsp;野</a></li>
+                        <li class="YangMingLive"><a class="pt-trigger" data-animation="26" data-goto="8">陽&nbsp;明&nbsp;生&nbsp;活</a></li>
+                        <li class="Skyscraper"><a class="pt-trigger" data-animation="26" data-goto="13">摩&nbsp;天&nbsp;豪&nbsp;邸</a></li>
+                        <li class="Celebrity"><a class="pt-trigger" data-animation="26" data-goto="19">名&nbsp;流&nbsp;品&nbsp;味</a></li>
+                        <li class="ArtFeast"><a class="pt-trigger" data-animation="26" data-goto="24">藝&nbsp;術&nbsp;盛&nbsp;宴</a></li>
+                        <li class="HumanBrand"><a class="pt-trigger" data-animation="26" data-goto="27">人&nbsp;文&nbsp;品&nbsp;牌</a></li>
+                        <li class="Info"><a class="pt-trigger" data-animation="26" data-goto="31">立&nbsp;即&nbsp;預&nbsp;約</a></li>
                     </ul>
                 </div>
             </nav>
@@ -76,7 +79,7 @@
                         <a href="https://www.facebook.com/hiyes.tw/" target="_blank"><img src="assets/images/icon-fb.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="javascript:;" target="_blank"><img src="assets/images/icon-line.png" alt=""></a>
+                        <a href="http://line.me/ti/p/@zyt0693s" target="_blank"><img src="assets/images/icon-line.png" alt=""></a>
                     </li>
                     <li>
                         <a href="tel:+88628885888"><img src="assets/images/icon-phone.png" alt=""></a>
@@ -99,7 +102,9 @@
     <!--All Pages-->
     <section id="section1" class="section1 home pt-page">
         <div class="container">
-            <div class="kvTitle"><img src="assets/images/kv.png" alt=""></div>
+            <div class="kvTitle">
+                <!-- <img src="assets/images/kv.png" alt=""> -->
+            </div>
         </div>
     </section>
     <!-- 1 -->
@@ -133,14 +138,14 @@
         <p class="annotation">台北歐洲學校實景</p>
     </section>
     <!-- 2 360 -->
-    <!-- <section id="section7" class="section7 360 pt-page">
+    <section id="section7" class="section7 360 pt-page">
         <div class="view360">
             <div class="p360">
                 <div class="panorama">
                     <div class="preloader"></div>
                     <div class="panorama-view">
                         <div class="panorama-container">
-                            <img src="images/360.jpg" data-width="3027" data-height="1080" alt="Panorama">
+                            <img src="assets/images/360.jpg" data-width="2560" data-height="983">
                         </div>
                     </div>
                 </div>
@@ -151,8 +156,7 @@
                 </div>
             </div>
         </div>
-        <p class="annotation">建築外觀實景環境修飾</p>
-    </section> -->
+    </section>
     <!-- 3 -->
     <section id="section8" class="section8 slide301 pt-page">
         <div class="txt-pos">
@@ -275,7 +279,7 @@
     <section id="section31" class="section31 pt-page contactPage">
         <div class="contactContent">
             <h1>基本資料</h1>
-            <div class="map-box">
+            <div class="map-box visible-desktop">
                 <div id="google_map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14451.48165304921!2d121.516664!3d25.1062476!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d90e2e8f455ab77!2z6JeN55Sw6Zme546J!5e0!3m2!1szh-TW!2stw!4v1534311841191" width="600"
                         height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
             </div>
@@ -294,10 +298,10 @@
                 <p>鑑賞專線｜2828-5888</p>
             </div>
 
-            <!-- <div class="map-box">
+            <div class="map-box hidden-desktop">
                 <div id="google_map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14451.48165304921!2d121.516664!3d25.1062476!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d90e2e8f455ab77!2z6JeN55Sw6Zme546J!5e0!3m2!1szh-TW!2stw!4v1534311841191" width="600"
                         height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-            </div> -->
+            </div>
 
             <div class="fill-in-table">
 

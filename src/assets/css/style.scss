@@ -37,16 +37,8 @@ img {
     text-align: left;
 }
 
-// .container {
-//     width: 96%;
-//     max-width: 1320px;
-//     display: block;
-//     margin: 0 auto;
-//     position: relative;
-//     // padding: 0 2%;
-// }
 .visible-desktop {
-    display: block !important;
+    display: inline-block !important;
 }
 
 .visible-tablet {
@@ -62,11 +54,11 @@ img {
 }
 
 .hidden-tablet {
-    display: block !important;
+    inline-display: block !important;
 }
 
 .hidden-phone {
-    display: block !important;
+    inline-display: block !important;
 }
 
 @media screen and (max-width: 1440px) {
@@ -80,7 +72,7 @@ img {
         display: none !important;
     }
     .visible-tablet {
-        display: block !important;
+        inline-display: block !important;
     }
     .visible-phone {
         display: none !important;
