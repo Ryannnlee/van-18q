@@ -204,9 +204,6 @@ header {
         width: 100%;
         height: auto;
     }
-    .footer {
-        display: none;
-    }
     .container-fluid.nav-right {
         padding: 0;
     }
@@ -315,12 +312,37 @@ header {
         width: 50%;
         max-width: 150px;
         padding: 15px;
+        margin: 0 auto;
+    }
+    .footer {
+        bottom: auto;
+        top: 50%;
+        left: 10px;
+        @include transform(translate(0, -50%));
+        .small-icon {
+            text-align: left;
+            margin-bottom: 0;
+            li {
+                width: 50px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .customer-phone {
+            display: none;
+        }
     }
 }
 
 @media (max-width: 767px) {
     #logo {
+        width: 45%;
         padding: 5px 10px;
+    }
+    .footer .small-icon li {
+        width: 32px;
+        margin: 0;
+        padding: 0;
     }
 }
 

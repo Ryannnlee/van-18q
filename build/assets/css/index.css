@@ -56,15 +56,14 @@
 #nextpage,
 #prevpage {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 4%;
+  padding-bottom: 8%;
   z-index: 10;
   cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 0;
   margin: 0;
   opacity: 0.5;
   transform: translate(0, -50%);
@@ -146,6 +145,11 @@
 .slide104 {
   background: url(../images/slide104.jpg) center center no-repeat;
   background-size: cover;
+}
+
+.slide104 .txt-pos {
+  left: auto;
+  right: 5%;
 }
 
 .slide105 {
@@ -645,13 +649,14 @@
 @media screen and (max-width: 767px) {
   #nextpage,
   #prevpage {
-    width: 50px;
+    width: 8%;
+    padding-bottom: 16%;
   }
   #nextpage {
-    right: 0px;
+    right: 5px;
   }
   #prevpage {
-    left: 0px;
+    left: 5px;
   }
   .txt-pos {
     width: 90%;
@@ -665,6 +670,12 @@
   }
   .txt-pos p {
     display: none;
+  }
+  .home .container .kvTitle {
+    width: 85%;
+    padding-bottom: 147%;
+    background: url(../images/m/kv.png) center top no-repeat;
+    background-size: cover;
   }
   .slide103 .txt-pos {
     color: #333;
